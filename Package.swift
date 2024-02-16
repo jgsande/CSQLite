@@ -43,7 +43,7 @@ let package = Package(
 				// Compile-time options
 				// https://sqlite.org/compile.html#recommended_compile_time_options
 				.define("SQLITE_DQS", to: "0"),
-				.define("SQLITE_THREADSAFE", to: "0"),
+				.define("SQLITE_THREADSAFE", to: "1"),
 				.define("SQLITE_DEFAULT_MEMSTATUS", to: "0"),
 				.define("SQLITE_DEFAULT_WAL_SYNCHRONOUS", to: "1"),
 				.define("SQLITE_LIKE_DOESNT_MATCH_BLOBS"),
@@ -53,7 +53,7 @@ let package = Package(
 				.define("SQLITE_OMIT_PROGRESS_CALLBACK", to: "1"),
 				.define("SQLITE_OMIT_SHARED_CACHE", to: "1"),
 				.define("SQLITE_USE_ALLOCA", to: "1"),
-				.define("SQLITE_OMIT_AUTOINIT"),
+//				.define("SQLITE_OMIT_AUTOINIT"),
 				.define("SQLITE_STRICT_SUBTYPE", to: "1"),
 				// Platform configuration
 				// https://sqlite.org/compile.html#_platform_configuration
