@@ -44,7 +44,8 @@ let package = Package(
 				// https://sqlite.org/compile.html#recommended_compile_time_options
 				.define("SQLITE_DQS", to: "0"),
 				.define("SQLITE_THREADSAFE", to: "1"),
-				.define("SQLITE_DEFAULT_MEMSTATUS", to: "0"),
+				.define("SQLITE_DEFAULT_MEMSTATUS", to: "1"),
+                .define("SQLITE_MAX_WORKER_THREADS", to: "20"),
 				.define("SQLITE_DEFAULT_WAL_SYNCHRONOUS", to: "1"),
 				.define("SQLITE_LIKE_DOESNT_MATCH_BLOBS"),
 				.define("SQLITE_MAX_EXPR_DEPTH", to: "0"),
