@@ -51,7 +51,7 @@ let package = Package(
 				.define("SQLITE_OMIT_DECLTYPE", to: "1"),
 				.define("SQLITE_OMIT_DEPRECATED"),
 				.define("SQLITE_OMIT_PROGRESS_CALLBACK", to: "1"),
-				.define("SQLITE_OMIT_SHARED_CACHE", to: "1"),
+				.define("SQLITE_OMIT_SHARED_CACHE", to: "0"),
 				.define("SQLITE_USE_ALLOCA", to: "1"),
 //				.define("SQLITE_OMIT_AUTOINIT"),
 				.define("SQLITE_STRICT_SUBTYPE", to: "1"),
