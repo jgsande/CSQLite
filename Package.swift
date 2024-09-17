@@ -57,6 +57,7 @@ let package = Package(
 				.define("SQLITE_USE_ALLOCA", to: "1"),
 //				.define("SQLITE_OMIT_AUTOINIT"),
 				.define("SQLITE_STRICT_SUBTYPE", to: "1"),
+				.define("SQLITE_DEFAULT_MMAP_SIZE", to: "1073741824"),
 				// Platform configuration
 				// https://sqlite.org/compile.html#_platform_configuration
 				.define("HAVE_ISNAN", to: "1"),
